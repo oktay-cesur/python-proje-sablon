@@ -4,6 +4,14 @@
 
 Bu projede dersimiz boyunca öğrendiğiniz yöntem ve teknikleri kullanarak gerçek bir problemi çözen bir yazılım geliştireceksiniz. Konu serbesttir: insan kaynaklarından muhasebeye, iş takibinden oyun geliştirmeye kadar geniş bir yelpaze mümkündür. Yönergede doğrudan sayılmayan bir konu da seçilebilir; önemli olan projenin gerçek bir problemi çözmesi ve aşağıdaki teknik gereklilikleri karşılamasıdır. Ancak konu ilginç olsa bile çekirdek gereklilikleri karşılamayan projeler yeterli kabul edilmeyecektir.
 
+Başlangıçta belirtmek gerekir ki proje buradan bakınca göz korkutucu görünebilir. Bu yönergedeki kriterlerin büyük çoğunluğu temel sektör standartlarına dayanmaktadır; fakat bu, sizden sektör standardında kod yazmanızı beklediğim anlamına gelmemektedir. Elbette öğrenme aşamasında olduğunuzun farkındayım ve beklentilerim de bu doğrultudadır. Puanlama kısmında hangi kriterin kaç puan olduğu ve hangi düzeyde neyi karşılaması gerektiği yazmaktadır. Projeniz bu kriterleri ne kadar karşılarsa o kadar puan alırsınız. Yetersiz kalan kısımlar notunuzu aşağı çeker, iyi yapılan kısımlar ise yukarı taşır. Nasıl ki klasik bir sınavda beklenen cevapların ne kadarını yazarsanız ona göre puan alıyorsunuz, burada da aynı durum mevcut.
+
+Burada asıl beklediğim şey, projenin size ait olması ve projeyi açıklayabilmenizdir. Yapay zekâdan yardım alabilirsiniz; ancak anlamadığınız kodu, sorguyu veya yapıyı projeye koymanız kabul edilmeyecektir. Örneğin veritabanında `GROUP BY`, `COUNT`, `LEFT JOIN` veya `RIGHT JOIN` kullanan bir öğrenci, en temel `SELECT * FROM urunler` sorgusunu bile açıklayamıyorsa bu proje öğrenci tarafından anlaşılmadan hazırlanmış kabul edilir. Sunum sırasında eksikler olabilir, hatalar yapabilirsiniz; ancak ileri seviye kodlar kullanıp en basit örneği açıklayamıyorsanız, bu durum kodun size ait olmadığı kanaatini doğurur. Böyle bir durumda kod çalışıyor olsa bile proje geçersiz sayılır ve durum intihal/akademik dürüstlük kapsamında değerlendirilebilir. Proje ile ilgili bir şeylerden çekiniyorsanız bu duruma düşme olmalıdır. Bu ise basit şekilde yazdığınız kodların ne olduğunu anlamanızla çözülebilir.
+
+Buna karşılık, eksikleri olan, kusurlu çalışan veya çok gelişmiş olmayan bir proje geçer not alabilir. Eğer proje temel gereklilikleri kısmen karşılıyor ve öğrenci yaptığı işi sunumda açıklayabiliyorsa genel olarak 50-60 arası bir not alması mümkündür. Kısacası, mükemmel görünen ama anlatılamayan proje kabul edilmeyecek; eksikleri olan ama öğrencinin gerçekten yaptığı ve açıklayabildiği proje puan alacaktır.
+
+Başlamadan önce bu yönergeyi dikkatlice okumanız gerekmektedir. Değerlendirme burada yazan ölçütlere göre yapılacaktır. Bu nedenle yönergede açıkça istenen bir gerekliliğin eksik olması, proje genel olarak iyi görünse bile puan kaybına yol açacaktır.
+
 Projeler en fazla **3 kişilik** gruplar hâlinde yapılacaktır. Grup büyüklüğüne göre ek gereklilikler aşağıda belirtilmiştir.
 
 ---
@@ -32,7 +40,7 @@ Her projede aşağıdaki çekirdek bileşenler bulunmalıdır:
 
 ## 2. Yazılım Gereksinimleri
 
-Program komut satırı üzerinden çalışabilir olmalıdır. İsteğe bağlı olarak Tkinter, PyQt, Streamlit, Flask veya Django gibi araçlarla görsel arayüz eklenebilir; bu bir zorunluluk değildir.
+Program komut satırı üzerinden çalışabilir olmalıdır. İsteğe bağlı olarak Tkinter, PyQt, Streamlit, Flask veya Django gibi araçlarla görsel arayüz eklenebilir; bu bir zorunluluk değildir. Arayüz için HTML, JavaScript tabanlı bir yol seçecekseniz bu kısımlar Python sadece Python ile ilgili olduğu kısımlarda projenin değerlendirmesine katılacaktır.
 
 Program çalıştırıldığında kısa bir tanıtım yazısı gösterilmeli, ardından kullanıcı giriş ekranına geçilmelidir. Giriş ekranında mevcut kullanıcıyla giriş ve yeni kullanıcı kaydı seçenekleri sunulmalıdır.
 
@@ -83,7 +91,7 @@ Kod yalnızca çalışır hâlde olmakla yetinmemelidir; okunabilir ve savunulab
 
 Her grup teslimini aşağıdaki yapıyla hazırlamalıdır:
 
-```text
+```
 GrupNo_ProjeAdi/
 │
 ├── README.md
@@ -99,11 +107,10 @@ GrupNo_ProjeAdi/
     ├── rol_yetki_matrisi.md
     ├── veritabani_ozeti.md
     ├── senaryolar.md
-    └── yapay_zeka_kullanim_beyani.md
-
+    └── ai_kullanim_beyani.md
 ```
 
-Klasör adları birebir aynı olmak zorunda değildir; ancak aynı tür belgeler teslimde bulunmalıdır. Sizin projenizde bulunan dosya yapısının nasıl olduğu README.md dosyasında belirtilmeli.
+Klasör adları birebir aynı olmak zorunda değildir; ancak aynı tür belgeler teslimde bulunmalıdır.
 
 ---
 
@@ -150,7 +157,7 @@ Sistemin nasıl test edileceğini gösteren en az şu senaryolar bulunmalıdır:
 - Rapor üretme
 - Log oluşumu
 
-### docs/yapay_zeka_kullanim_beyani.md
+### docs/ai_kullanim_beyani.md
 
 Yapay zekâ araçları kullanıldıysa hangi bölümde, ne amaçla kullanıldığı kısaca ve dürüstçe açıklanmalıdır (kod iskeleti, hata ayıklama, dokümantasyon, SQL önerisi vb.). Bu dosya yasak mantığı için değil, akademik şeffaflık için istenmektedir.
 
@@ -184,11 +191,45 @@ Her kriter üç düzeyde değerlendirilir:
 
 **Beklenen kanıtlar:** İşlevsel modüllere ayrılmış proje dosyaları, anlamlı isimlendirme, uygun yorum satırları, fonksiyonlaştırılmış tekrar eden yapılar.
 
-| Düzey        | Açıklama                                                                                                                                                    |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Yetersiz** | Kod tek dosyada ya da anlamsız parçalara bölünmüş; isimlendirmeler belirsiz; yorum hiç yok ya da her satırda gereksiz yorum var; yapı spagetti.             |
-| **Yeterli**  | Modüller işlevlerine göre ayrılmış; fonksiyonlar tek bir iş yapıyor; yorumlar orantılı ve bilgilendirici; kod başkası tarafından takip edilebilir.          |
-| **İyi**      | Modüller arası sorumluluk sınırları net; iş kuralları tek noktada toplanmış; hata yönetimi düşünülmüş; kod minimal değişiklikle genişletilebilir nitelikte. |
+#### Modüler Yapı — 5 puan
+
+**✓ Beklenen:**
+
+- Proje birden fazla dosyadan oluşuyor
+- Her dosya belirli bir işlev grubunu barındırıyor
+
+**✗ İstenmeyen:**
+
+- Tüm kod tek bir dosyada yazılmış — **kritik**
+- Dosyalar var ama içerikler rastgele dağıtılmış, mantıklı bir ayrım yok
+- Kod iki dosyaya bölünmüş ama biri neredeyse boş, tüm işlemler yine tek dosyada toplanmış
+
+#### Fonksiyon Kullanımı — 5 puan
+
+**✓ Beklenen:**
+
+- Tekrar eden işlemler fonksiyon olarak tanımlanmış
+- Her fonksiyon tek bir iş yapıyor
+
+**✗ İstenmeyen:**
+
+- Aynı kod bloğu farklı yerlerde tekrar tekrar yazılmış — **kritik**
+- Çok uzun fonksiyonlar içinde birbiriyle ilgisiz işlemler bir arada yapılıyor
+- Fonksiyonlar tanımlanmış ama yalnızca bir kez çağrılıyor; fonksiyon yazma amacı anlaşılmamış
+
+#### Kod Kalitesi — 5 puan
+
+**✓ Beklenen:**
+
+- Değişken, fonksiyon ve sınıf isimleri ne yaptığını anlatıyor
+- Her fonksiyonun ve modülün başında ne işe yaradığını açıklayan kısa bir yorum var
+
+**✗ İstenmeyen:**
+
+- Değişken isimleri `a`, `x`, `temp` gibi anlamsız — **kritik**
+- Hiç yorum satırı yok
+- Her satırda yorum var, yorumlar kodun kendisini kelimesi kelimesine tekrar ediyor
+- Tüm değişken ve fonksiyon isimleri ne anlama geldiği anlaşılmayan kısaltmalardan oluşuyor
 
 ---
 
@@ -196,11 +237,42 @@ Her kriter üç düzeyde değerlendirilir:
 
 **Beklenen kanıtlar:** Birbirinden gerçek anlamda farklılaşmış kullanıcı sınıfları, temel sınıftan türetme, role göre menü ve işlem farklılaşması, çalışan giriş/kayıt ekranı.
 
-| Düzey        | Açıklama                                                                                                                                                                                       |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Yetersiz** | Kullanıcı tipleri sınıf olarak tanımlanmış ama aralarındaki tek fark ad/soyad gibi veri alanları; yetkiler kodda gerçek anlamda ayrışmıyor; OOP yalnızca şeklen uygulanmış.                    |
-| **Yeterli**  | Her kullanıcı tipinin kendine özgü işlemleri var; temel sınıf–alt sınıf ilişkisi anlamlı; giriş sonrası menü ve erişimler role göre farklılaşıyor; yetki kontrolü görünür biçimde uygulanıyor. |
-| **İyi**      | Sınıf hiyerarşisi projenin iş mantığını doğal biçimde yansıtıyor; yetki ihlali denemeleri düzgün yönetiliyor; tasarım genişlemeye açık.                                                        |
+#### Kullanıcı Girişi, Kayıt ve Rol/Yetki Sistemi — 10 puan
+
+**✓ Beklenen:**
+
+- Sisteme giriş ve yeni kullanıcı kaydı yapılabiliyor
+- En az üç farklı kullanıcı tipi var ve her birinin menüleri birbirinden farklı
+- Yetkisiz işlem girişimleri engelleniyor
+- Admin hesabı önceden tanımlı ve sisteme giriş yapılabiliyor
+
+**✗ İstenmeyen:**
+
+- Giriş ekranı var ama tüm kullanıcılar aynı menüyü görüyor — **kritik**
+- Yetki kontrolü yok; herhangi bir kullanıcı admin işlemlerini yapabiliyor — **kritik**
+- Admin hesabı tanımlı değil ya da sisteme giremiyor — **kritik**
+- Kullanıcı tipleri arasındaki tek fark menü seçeneklerinin sayısı; asıl işlemler herkese açık
+- Giriş yapan kullanıcının bilgisi sonraki işlemlere taşınmıyor
+- Kayıt sırasında aynı kullanıcı adıyla ikinci bir hesap açılabiliyor
+- Kullanıcı kaydı yapılabiliyor ama kullanıcı tipi atanmıyor; herkes aynı yetkiyle başlıyor
+
+#### OOP Tasarımı — 10 puan
+
+**✓ Beklenen:**
+
+- Her kullanıcı tipi bir sınıfla tanımlanmış
+- Kullanıcı tipleri ortak bir temel sınıftan türetilmiş
+- Kullanıcı tipine özgü işlemler o sınıfın içinde metod olarak tanımlı
+
+**✗ İstenmeyen:**
+
+- Kullanıcı tipleri hiç sınıf kullanılmadan yalnızca fonksiyonlarla yönetiliyor — **kritik**
+- Sınıflar tanımlanmış ama kalıtım hiç kullanılmamış — **kritik**
+- Sınıflar tanımlanmış ama hiçbir zaman nesne oluşturulmamış; sınıflar işlevsiz kalmış
+- Sınıflar arasındaki tek fark isim ve birkaç veri alanı; metodlar ve işlemler aynı
+- Tüm kullanıcı tipleri tek bir sınıfla temsil ediliyor; tip ayrımı if bloklarıyla yapılıyor
+- Kullanıcı işlemleri sınıf içinde değil, sınıf dışında dağınık fonksiyonlar olarak yazılmış
+- Temel sınıf tanımlanmış ama içi boş; kalıtım yalnızca şeklen uygulanmış
 
 ---
 
@@ -208,11 +280,43 @@ Her kriter üç düzeyde değerlendirilir:
 
 **Beklenen kanıtlar:** Veritabanı bağlantı dosyası, birden fazla tablo, tablolar arası en az bir ilişki, projenin ihtiyaçlarını karşılayan sorgu çeşitliliği.
 
-| Düzey        | Açıklama                                                                                                                                                           |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Yetersiz** | Veritabanı var ama tek tablo ve birkaç basit sütundan ibaret; yalnızca INSERT/SELECT kullanılmış; ilişki yok; veri yapısı projenin gerçek ihtiyacını karşılamıyor. |
-| **Yeterli**  | Birden fazla tablo ve aralarında en az bir ilişki var; CRUD işlemleri uygulanmış; veritabanı yapısı projenin veri ihtiyacını karşılıyor.                           |
-| **İyi**      | Tablo ve ilişki tasarımı projenin tüm iş akışını taşıyacak düzeyde; sorgular karmaşıklığa orantılı; veri bütünlüğü düşünülmüş.                                     |
+#### Veritabanı — 10 puan
+
+**✓ Beklenen:**
+
+- Program bir veritabanına bağlanıyor ve veriler orada saklanıyor
+- Tablolar projenin ihtiyacına göre tasarlanmış
+- Program kapatılıp açıldığında veriler kaybolmuyor
+
+**✗ İstenmeyen:**
+
+- Veriler veritabanı yerine dosyada ya da programın içindeki listede tutuluyor — **kritik**
+- Veritabanı bağlantısı var ama yalnızca kullanıcı adı ve parola saklanıyor; projenin asıl verileri veritabanında yer almıyor
+- Tablo yapısı projenin veri ihtiyacını karşılamıyor; çoğu veri ya eksik ya da yanlış tabloda tutuluyor
+- Program kapatılınca veriler sıfırlanıyor
+- Veritabanı var ama tüm veriler tek bir tabloya, birkaç sütuna sıkıştırılmış
+- Sorgular çalışıyor ama hatalı veri girişine karşı hiçbir kontrol yok; geçersiz veriler veritabanına yazılıyor
+
+#### Sistem Bütünlüğü ve Genel İşleyiş — 10 puan
+
+**✓ Beklenen:**
+
+- Tüm bileşenler birlikte çalışıyor; kullanıcı akışı uçtan uca kesintisiz ilerliyor
+- Veriler doğru yere yazılıyor ve doğru yerden okunuyor
+- Hatalı giriş durumlarında program anlaşılır mesaj veriyor ve devam edebiliyor
+
+**✗ İstenmeyen:**
+
+- Program sık sık hata verip kapanıyor — **kritik**
+- Bileşenler birbirinden kopuk; veritabanına yazılan veri başka ekranda görünmüyor — **kritik**
+- Sistem gerçek bir problemi çözmüyor; yalnızca kullanıcı kaydı yapıp listeliyor, başka işlev yok — **kritik**
+- Tüm kriterler ayrı ayrı çalışıyor görünüyor ama birbirleriyle bağlantısı yok
+- Yanlış veya boş giriş yapıldığında program çöküyor
+- Bir işlem yapıldığında ilgili diğer bileşenler güncellenmiyor
+- Aynı işlem iki kez yapılınca çelişkili sonuçlar üretiyor
+- Menüden geçersiz bir seçenek girildiğinde program donuyor ya da kapanıyor
+- Proje demo senaryosu takip edildiğinde belirli bir noktada takılıp kalıyor
+- Bazı özellikler tek başına çalışıyor ama sistem bir bütün olarak tutarsız davranıyor
 
 ---
 
@@ -220,11 +324,21 @@ Her kriter üç düzeyde değerlendirilir:
 
 **Beklenen kanıtlar:** Giriş, veri ekleme/silme/güncelleme, rapor alma gibi işlemlerin tarih/saat ve işlem tipiyle birlikte veritabanına yazılması; kayıtların sorgulanabilir olması.
 
-| Düzey        | Açıklama                                                                                                                         |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| **Yetersiz** | Log tablosu var ama yalnızca giriş kaydı tutuluyor ya da kayıtlar tarih/saat içermiyor; sorgulanamıyor.                          |
-| **Yeterli**  | Temel işlemler tarih/saat ve kullanıcı bilgisiyle birlikte kaydediliyor; admin bu kayıtları görüntüleyebiliyor.                  |
-| **İyi**      | Tüm kritik işlemler eksiksiz kaydediliyor; kayıtlar filtrelenebilir ya da özetlenebilir; işlevsel bir denetim izi oluşturuluyor. |
+#### Loglama ve Raporlama — 10 puan
+
+**✓ Beklenen:**
+
+- Kullanıcıların yaptığı işlemler tarih ve saat bilgisiyle birlikte kaydediliyor
+- Kullanıcı kendi işlemlerini, admin tüm kullanıcıların işlem geçmişini görebiliyor
+
+**✗ İstenmeyen:**
+
+- Hiçbir işlem kaydedilmiyor — **kritik**
+- Yalnızca giriş işlemi kaydediliyor, diğer işlemler kayıt dışı kalıyor
+- Log kaydı var ama tarih/saat bilgisi yok ya da hangi kullanıcının yaptığı belli değil
+- Rapor ekranı var ama içerik sabit yazılmış, gerçek verilerden gelmiyor
+- Tüm kullanıcılar birbirinin işlem geçmişini görebiliyor
+- Raporlama yalnızca ham veri listesi sunuyor; hangi kullanıcının ne yaptığı ayırt edilemiyor
 
 ---
 
@@ -232,11 +346,7 @@ Her kriter üç düzeyde değerlendirilir:
 
 **Beklenen kanıtlar:** Kullanıcıya özel işlem raporu, admin için sistem geneli rapor; raporların veritabanı kayıtlarına dayanması.
 
-| Düzey        | Açıklama                                                                                                                                         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Yetersiz** | Rapor ekranı var ama içerik sabit/sahte veri ya da yalnızca ham tablo çıktısı; kullanıcıya özgü filtreleme yok.                                  |
-| **Yeterli**  | Kullanıcı kendi işlemlerini, admin tüm kullanıcıların işlemlerini görebiliyor; raporlar veritabanından çekiliyor ve anlaşılır biçimde sunuluyor. |
-| **İyi**      | Raporlar tarih aralığı veya işlem tipi gibi parametrelerle filtrelenebiliyor ya da özetlenmiş istatistik sunuyor.                                |
+Raporlama değerlendirmesi yukarıdaki Loglama ve Raporlama kriteri kapsamında ele alınmaktadır.
 
 ---
 
@@ -244,11 +354,20 @@ Her kriter üç düzeyde değerlendirilir:
 
 **Beklenen kanıtlar:** Grup büyüklüğüne göre seçilen ileri özelliklerin projeye entegrasyonu ve README'de açıklanması.
 
-| Düzey        | Açıklama                                                                                                     |
-| ------------ | ------------------------------------------------------------------------------------------------------------ |
-| **Yetersiz** | Özellik eklenmiş ama çalışmıyor, projeyle entegre değil ya da yalnızca import edilmiş; işlevsel katkısı yok. |
-| **Yeterli**  | Seçilen özellikler çalışıyor ve projenin akışına entegre edilmiş; ne amaçla kullanıldığı anlaşılıyor.        |
-| **İyi**      | Özellikler projeye gerçek değer katıyor; sistemin başka türlü karşılayamayacağı bir ihtiyacı çözüyor.        |
+#### İleri Özellikler / Grup Gereklilikleri — 15 puan
+
+**✓ Beklenen:**
+
+- Grup büyüklüğüne göre gereken sayıda ileri özellik seçilmiş ve çalışıyor
+- README'de hangi özelliklerin seçildiği açıklanmış
+
+**✗ İstenmeyen:**
+
+- Gereken sayıda ileri özellik seçilmemiş — **kritik**
+- Özellik eklenmiş ama çalışmıyor ya da projeyle bağlantısı yok
+- Kütüphane import edilmiş ama hiçbir yerde gerçekten kullanılmamış
+- Özellik çalışıyor ama projenin geri kalanıyla bağlantısı yok; ayrı bir ekran olarak duruyor
+- Grafik raporlama seçilmiş ama yalnızca sabit veriyle çiziliyor, gerçek veriler kullanılmıyor
 
 ---
 
@@ -256,11 +375,21 @@ Her kriter üç düzeyde değerlendirilir:
 
 **Beklenen kanıtlar:** README ve docs/ klasöründeki zorunlu belgeler; kurulum/çalıştırma adımlarının eksiksizliği; demo kullanıcı bilgileri.
 
-| Düzey        | Açıklama                                                                                                                          |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------- |
-| **Yetersiz** | Belgeler eksik ya da yalnızca başlıklardan ibaret; kurulum adımları belirsiz; proje başkası tarafından çalıştırılamıyor.          |
-| **Yeterli**  | Tüm zorunlu belgeler mevcut ve anlaşılır; kurulum adımları izlenerek proje çalıştırılabiliyor; demo kullanıcılar tanımlanmış.     |
-| **İyi**      | Belgeler projeyi hiç görmeyen birinin sistemi anlayıp çalıştırmasına yetecek düzeyde; örnek senaryolar somut ve takip edilebilir. |
+#### Dokümantasyon ve Çalıştırılabilirlik — 10 puan
+
+**✓ Beklenen:**
+
+- README dosyası var ve projeyi daha önce hiç görmeyen biri okuyunca ne yapacağını anlıyor
+- Kurulum ve çalıştırma adımları takip edilince program çalışıyor
+- Demo kullanıcıların giriş bilgileri belirtilmiş
+
+**✗ İstenmeyen:**
+
+- README yok ya da yalnızca başlıklardan ibaret — **kritik**
+- Kurulum adımları belirsiz; değerlendirici programı çalıştıramıyor — **kritik**
+- Demo kullanıcı bilgileri verilmemiş
+- README var ama projeyi hiç tanımlamıyor; yalnızca dosya listesi içeriyor
+- Zorunlu belgeler eksik ya da içerik şablondan farklılaştırılmamış
 
 ---
 

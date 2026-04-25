@@ -28,9 +28,9 @@ Her başlık altında projenizin ilgili gerekliliği nasıl karşılayacağını
 
 `[Programın genel akışı, kullanıcıların sisteme nasıl gireceği ve temel işlemlerin nasıl başlatılacağı açıklanmalıdır.]`
 
-### Modüler Yapı
+### Modüler Yapı ve Kod Kalitesi
 
-`[Kodun hangi modüllere ayrılacağı ve bu modüllerin hangi sorumlulukları taşıyacağı açıklanmalıdır.]`
+`[Kodun hangi modüllere ayrılacağı ve bu modüllerin hangi sorumlulukları taşıyacağı açıklanmalıdır. Tekrar eden yapıların nasıl fonksiyonlaştırılacağı ve isimlendirme ile yorum satırı yaklaşımı belirtilmelidir.]`
 
 ### Veritabanı Kullanımı
 
@@ -44,13 +44,9 @@ Her başlık altında projenizin ilgili gerekliliği nasıl karşılayacağını
 
 `[Kullanıcı sınıfları, temel sınıf-alt sınıf ilişkisi ve sınıfların görevleri açıklanmalıdır.]`
 
-### İşlem Kayıtları
+### Loglama ve Raporlama
 
-`[Sistemde hangi işlemlerin kaydedileceği ve bu kayıtların nasıl tutulacağı açıklanmalıdır.]`
-
-### Raporlama
-
-`[Kullanıcıların ve admin kullanıcının hangi raporları alabileceği açıklanmalıdır.]`
+`[Sistemde hangi işlemlerin kaydedileceği, tarih/saat ve kullanıcı bilgisinin nasıl tutulacağı açıklanmalıdır. Kullanıcıların kendi işlemlerini, adminin tüm kullanıcıların geçmişini nasıl görebileceği belirtilmelidir.]`
 
 ### Seçilen İleri Özellikler
 
